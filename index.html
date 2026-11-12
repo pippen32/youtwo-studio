@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTwo Studio — Fábrica de Recuerdos para Parejas | One Photo Becomes 22 Gifts</title>
+<meta name="description" content="From ONE photo: 3D crystal, mini figurine, movie posters, poems, comics and more — personalized couple gifts made to order.">
+<style>
+:root{
+ --bg:#04150e; --bg2:#07271a; --panel:#0b3122; --panel2:#11402d;
+ --gold:#e3b341; --gold2:#f6d67a; --emer:#1ec98b; --ivory:#f5edd6;
+ --txt:#f7f3e6; --mut:#bcc9ae; --line:#1d4d36;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',Verdana,Geneva,sans-serif;font-size:16px;line-height:1.55}
+h1,h2,h3{font-family:'Arial Black','Segoe UI',Verdana,sans-serif;letter-spacing:.2px}
+img{display:block;width:100%}
+a{color:var(--ivory)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+/* top bar */
+.topbar{position:sticky;top:0;z-index:60;background:#04150e;border-bottom:3px solid var(--gold);padding:9px 0}
+.topbar .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--txt)}
+.mono{width:46px;height:46px;flex:0 0 46px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--emer));display:flex;align-items:center;justify-content:center;font-family:'Arial Black',sans-serif;font-size:19px;color:#241a02;box-shadow:0 0 18px rgba(227,179,65,.55)}
+.logo b{font-size:17.5px;line-height:1.12;display:block;text-transform:uppercase}
+.logo small{color:var(--emer);font-size:11px;letter-spacing:1.6px;text-transform:uppercase}
+.topbar .sp{flex:1}
+.store-btn{background:linear-gradient(92deg,var(--gold),var(--gold2));color:#241a02!important;text-decoration:none;font-weight:bold;padding:11px 17px;border-radius:30px;font-size:14.5px;white-space:nowrap;box-shadow:0 4px 16px rgba(227,179,65,.45)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{color:var(--mut);text-decoration:none;font-size:13.5px;font-weight:bold;padding:7px 10px;border-radius:20px}
+.nav a:hover{background:var(--panel2);color:#fff}
+[id]{scroll-margin-top:232px}
+/* hero */
+.hero{position:relative;background:var(--bg2)}
+.hero img{height:56vh;min-height:380px;object-fit:cover;object-position:center 38%}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,21,14,.30) 0%,rgba(4,21,14,.06) 40%,rgba(4,21,14,.94) 88%)}
+.hero .cap{position:absolute;left:0;right:0;bottom:0;padding:0 0 26px}
+.kicker{display:inline-block;background:var(--gold);color:#241a02;font-weight:bold;font-size:12.5px;letter-spacing:2.2px;padding:6px 14px;border-radius:4px;text-transform:uppercase;box-shadow:0 0 22px rgba(227,179,65,.55)}
+.hero h1{font-size:clamp(40px,9vw,76px);line-height:.98;margin:14px 0 6px;text-transform:uppercase;text-shadow:0 4px 30px rgba(0,0,0,.8)}
+.hero h1 em{font-style:normal;background:linear-gradient(92deg,var(--gold2),var(--emer));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .es{font-size:clamp(18px,4.4vw,26px);font-weight:bold;color:#ffe9a8}
+.hero p.lead{max-width:760px;color:#f1ecd9;font-size:16.5px;margin-top:10px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn-big{background:linear-gradient(92deg,var(--gold),var(--gold2));color:#241a02!important;text-decoration:none;font-weight:bold;font-size:18px;padding:16px 30px;border-radius:34px;box-shadow:0 6px 26px rgba(227,179,65,.45)}
+.btn-ghost{border:2px solid var(--ivory);color:var(--ivory)!important;text-decoration:none;font-weight:bold;font-size:16.5px;padding:14px 26px;border-radius:34px;background:rgba(4,21,14,.55)}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{background:rgba(6,33,23,.88);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:9px 14px;font-size:14px}
+.stat b{font-size:17px;color:#fff}
+/* ticker */
+.ticker{background:linear-gradient(92deg,#07301f,#0f6a45,#a8851f);color:#fff8e6;overflow:hidden;padding:9px 0;font-weight:bold;font-size:14.5px;letter-spacing:.6px}
+.ticker .in{display:inline-block;white-space:nowrap;animation:tick 30s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* sections */
+section{padding:46px 0 6px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:3px solid var(--line);padding-bottom:12px;margin-bottom:20px}
+.sec-head .no{font-family:'Arial Black',sans-serif;font-size:40px;color:var(--gold);line-height:1;text-shadow:0 0 16px rgba(227,179,65,.45)}
+.sec-head h2{font-size:clamp(26px,5.4vw,40px);text-transform:uppercase;line-height:1.08}
+.sec-head h2 em{font-style:normal;color:var(--emer)}
+.sec-head .sub{color:var(--mut);font-size:15px;width:100%}
+/* steps strip */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.step{background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:12px;padding:18px}
+.step .n{font-family:'Arial Black',sans-serif;font-size:32px;background:linear-gradient(92deg,var(--gold2),var(--emer));-webkit-background-clip:text;background-clip:text;color:transparent}
+.step h3{font-size:18px;margin:4px 0 6px}
+.step p{color:var(--mut);font-size:14.5px}
+/* product grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card:hover{border-color:var(--gold)}
+.card .ph{position:relative}
+.card .ph img{aspect-ratio:4/3;object-fit:cover}
+.card .ph.tall img{aspect-ratio:3/3.4}
+.tag{position:absolute;top:10px;left:10px;background:var(--gold);color:#241a02;font-size:11.5px;font-weight:bold;letter-spacing:1.2px;padding:5px 10px;border-radius:4px;text-transform:uppercase;box-shadow:0 3px 10px rgba(0,0,0,.5)}
+.tag.emer{background:var(--emer);color:#032117}
+.tag.cyn{background:var(--ivory);color:#3a2d05}
+.card .bd{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card h3{font-size:17.5px;line-height:1.2}
+.card .es{color:var(--emer);font-size:13px;font-weight:bold}
+.card p{color:var(--mut);font-size:14px;flex:1}
+.row{display:flex;align-items:center;gap:10px;margin-top:4px}
+.price{font-family:'Arial Black',sans-serif;font-size:23px;color:#fff}
+.price small{font-size:13px;color:var(--mut);font-family:Verdana,sans-serif}
+.buy{margin-left:auto;background:linear-gradient(92deg,var(--gold),var(--gold2));color:#241a02!important;box-shadow:0 3px 12px rgba(227,179,65,.4);text-decoration:none;font-weight:bold;font-size:15px;padding:11px 18px;border-radius:26px;white-space:nowrap}
+.buy:active{transform:scale(.96)}
+/* examples band */
+.band{background:linear-gradient(180deg,var(--panel) 0%,var(--bg2) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.expo{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.excard{background:#062117;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.excard .hd{padding:12px 16px 0;display:flex;gap:10px;align-items:center}
+.excard h3{font-size:17px}
+.excard .bd{padding:12px 16px 16px}
+.poem{background:#f7f3ea;color:#241016;border-radius:10px;padding:18px 18px 14px;font-family:Georgia,'Times New Roman',serif;font-size:15.5px;line-height:1.62;box-shadow:inset 0 0 0 2px #e4d7bd}
+.poem h4{font-family:Georgia,serif;font-size:19px;margin-bottom:8px;color:#0b5340}
+.poem .sig{margin-top:10px;font-style:italic;color:#5c4a2e}
+.exlabel{display:inline-block;background:var(--ivory);color:#3a2d05;font-weight:bold;font-size:11px;letter-spacing:1.4px;padding:4px 9px;border-radius:4px}
+.excard p.note{color:var(--mut);font-size:13.5px;margin-top:10px}
+figure.shot{margin:0}
+figure.shot img{border-radius:10px}
+figure.shot figcaption{color:var(--mut);font-size:13px;margin-top:8px}
+/* stars / packages */
+.stars{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.star{border-radius:16px;overflow:hidden;background:var(--panel);border:2px solid var(--gold);display:flex;flex-direction:column}
+.star.f{border-color:var(--emer)}
+.star .ph img{aspect-ratio:16/10;object-fit:cover}
+.star .bd{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.star h3{font-size:23px;text-transform:uppercase}
+.star p{color:var(--mut);font-size:14.5px;flex:1}
+.star .price{font-size:32px}
+.pkg{background:linear-gradient(135deg,#0a2e20,#04150e);border:2px solid var(--emer)}
+/* deadlines */
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.dl .d{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}
+.dl .d b{font-size:16.5px;display:block}
+.dl .d .when{font-family:'Arial Black',sans-serif;font-size:21px;color:var(--gold2);display:block;margin:3px 0}
+.dl .d p{color:var(--mut);font-size:13.5px}
+/* resellers */
+.resell{background:linear-gradient(120deg,#062117 0%,#0b3d29 55%,#123d24 100%);border:2px solid var(--gold);border-radius:18px;padding:26px 22px}
+.resell h2{font-size:clamp(24px,5vw,34px);text-transform:uppercase}
+.resell h2 em{font-style:normal;color:var(--ivory)}
+.resell p{color:#f1ecd9;max-width:860px;margin-top:8px;font-size:15.5px}
+.comm{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:18px}
+.comm .c{background:rgba(4,21,14,.65);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.comm .c .pct{font-family:'Arial Black',sans-serif;font-size:33px;background:linear-gradient(92deg,var(--gold2),var(--emer));-webkit-background-clip:text;background-clip:text;color:transparent}
+.comm .c span{display:block;color:var(--mut);font-size:13.5px;margin-top:2px}
+/* footer */
+footer{margin-top:52px;background:#020a06;border-top:3px solid var(--gold);padding:30px 0 40px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+footer h4{font-size:16px;margin-bottom:8px;text-transform:uppercase}
+footer p,footer li{color:var(--mut);font-size:14px}
+footer ul{list-style:none}
+footer li{margin:4px 0}
+.fine{color:#7d8b74;font-size:12.5px;margin-top:22px;text-align:center}
+@media(max-width:560px){.grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:11px}.card h3{font-size:15.5px}.price{font-size:19px}.buy{padding:10px 13px;font-size:14px}.hero img{height:48vh}}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<a class="logo" href="#top"><span class="mono">U2</span><span><b>YouTwo Studio</b><small>Fábrica de Recuerdos para Parejas</small></span></a>
+<span class="sp"></span>
+<nav class="nav"><a href="#estrellas">Stars</a><a href="#digitales">Digital</a><a href="#fisicos">Ship-It</a><a href="#ejemplos">Examples</a><a href="#revendedores">Sell &amp; Earn</a></nav>
+<a class="store-btn" href="https://payhip.com/profeshop" target="_blank" rel="noopener">🛍️ Shop · Tienda</a>
+</div></header>
+
+<div class="hero" id="top"><img src="fotos-v2/hero-cristal.jpg" alt="Couple holding their glowing 3D crystal">
+<div class="veil"></div><div class="cap"><div class="wrap">
+<span class="kicker">One photo in · 22 gifts out</span>
+<h1>YOUR PHOTO.<br><em>THEIR BEST GIFT EVER.</em></h1>
+<div class="es">Fábrica de Recuerdos para Parejas — de una sola foto salen 22 regalos</div>
+<p class="lead">Send us ONE photo of you two. We turn it into a glowing 3D crystal, a mini figurine, a movie poster with you as the stars, a poem written from YOUR story, a comic book, a blanket — gifts nobody else on Earth can give them. <b>Digital gifts in 24–48 h. Christmas orders open NOW.</b></p>
+<div class="cta-row"><a class="btn-big" href="#estrellas">🎁 See the gifts · Ver regalos</a><a class="btn-ghost" href="#ejemplos">👀 See real examples first</a></div>
+<div class="stats">
+<div class="stat"><b>22</b> products from 1 photo</div>
+<div class="stat"><b>24–48 h</b> digital delivery</div>
+<div class="stat"><b>100%</b> preview approved by you first</div>
+<div class="stat"><b>$14.99</b> gifts from · desde</div>
+</div>
+</div></div></div>
+
+<div class="ticker"><span class="in">🎄 CHRISTMAS 2026 — FIGURINES CLOSE NOV 20 ✦ CRYSTAL UNTIL DEC 8 ✦ PRINTED GIFTS UNTIL DEC 11 ✦ DIGITAL GIFTS UNTIL DEC 24 ✦ 💝 VALENTINE'S FEB 14, 2027 ✦ 🎄 NAVIDAD 2026 — MUÑECOS HASTA EL 20-NOV ✦ CRISTAL HASTA EL 8-DIC ✦ IMPRESOS HASTA EL 11-DIC ✦ DIGITALES HASTA EL 24-DIC ✦&nbsp;</span></div>
+
+<section id="como"><div class="wrap">
+<div class="sec-head"><span class="no">01</span><h2>How it works · <em>Cómo funciona</em></h2><span class="sub">Three steps. No design skills, no apps, no stress — we do the work, you take the credit. · Tres pasos: tú mandas la foto, nosotros hacemos la magia.</span></div>
+<div class="steps">
+<div class="step"><div class="n">1</div><h3>Buy in the store, then email your photo</h3><p>Order your gift in our Payhip store, then email us ONE photo of you two and three lines of your story to <b>swingbravo@gmail.com</b>. That is literally all we need to start. · Compra en la tienda y envíanos tu foto + tu historia por email.</p></div>
+<div class="step"><div class="n">2</div><h3>Approve the preview</h3><p>Te enseñamos la vista previa ANTES de producir. Nothing gets made until you say “perfect” — sin sorpresas.</p></div>
+<div class="step"><div class="n">3</div><h3>It arrives · Llega a tu puerta</h3><p>Digital gifts land in 24–48 h. Physical gifts are produced and shipped to your door, gift-ready.</p></div>
+</div></div></section>
+
+<section id="estrellas"><div class="wrap">
+<div class="sec-head"><span class="no">02</span><h2>The stars · <em>Las estrellas</em></h2><span class="sub">The four gifts people screenshot and send to their friends. · Los cuatro regalos que la gente le manda foto a todo el mundo.</span></div>
+<div class="stars"><article class="star "><div class="ph"><img src="fotos-v2/hero-cristal.jpg" alt="3D Crystal with LED Base" loading="lazy"></div>
+<div class="bd"><span class="exlabel">STAR · ESTRELLA</span><h3>3D Crystal with LED Base</h3><div class="es" style="color:var(--emer);font-weight:bold;font-size:13.5px">Cristal 3D con base LED</div><p>Your photo sculpted INSIDE crystal glass, lit from an LED base. In a dark room it floats. The gift that makes people go quiet — then cry a little.</p>
+<div class="row"><span class="price">$79.99–99.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="star f"><div class="ph"><img src="fotos-v2/muneco-3d.jpg" alt="Custom 3D Mini Figurine" loading="lazy"></div>
+<div class="bd"><span class="exlabel">STAR · ESTRELLA</span><h3>Custom 3D Mini Figurine</h3><div class="es" style="color:var(--emer);font-weight:bold;font-size:13.5px">Muñeco 3D personalizado en base de madera</div><p>You two in miniature, modeled from your photo and set on a wooden base — standing right next to the photo it came from. Order before Nov 20 for Christmas.</p>
+<div class="row"><span class="price">$229.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="star f"><div class="ph"><img src="fotos-v2/paquete-completo.jpg" alt="THE COMPLETE PACKAGE" loading="lazy"></div>
+<div class="bd"><span class="exlabel">STAR · ESTRELLA</span><h3>THE COMPLETE PACKAGE</h3><div class="es" style="color:var(--emer);font-weight:bold;font-size:13.5px">Paquete completo en caja de regalo</div><p>Poem + caricature + 3D crystal + mini figurine, presented in one gift box. One order, the whole factory. For the anniversary that has to be unforgettable.</p>
+<div class="row"><span class="price">$329.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="star "><div class="ph"><img src="fotos-v2/poster-pared.jpg" alt="“PREMIERE” PACKAGE" loading="lazy"></div>
+<div class="bd"><span class="exlabel">STAR · ESTRELLA</span><h3>“PREMIERE” PACKAGE</h3><div class="es" style="color:var(--emer);font-weight:bold;font-size:13.5px">Paquete Premiere · póster + tráiler + cómic</div><p>Your movie, complete: the digital movie poster, the 30–45 sec trailer and the digital comic book of your story. Red carpet not included.</p>
+<div class="row"><span class="price">$99.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article></div>
+</div></section>
+
+<section id="digitales"><div class="wrap">
+<div class="sec-head"><span class="no">03</span><h2>Digital gifts · <em>Regalos digitales</em></h2><span class="sub">Made from your photo and delivered in 24–48 hours — order even on Dec 24. · Hechos desde su foto y entregados en 24–48 horas.</span></div>
+<div class="grid"><article class="card"><div class="ph"><img src="fotos-v2/poema-tarjeta.jpg" alt="Exclusive Poem of YOUR Story" loading="lazy"><span class="tag ">Sample below ↓</span></div>
+<div class="bd"><h3>Exclusive Poem of YOUR Story</h3><div class="es">Poema exclusivo de SU historia · EN o ES</div><p>A real poem written only for you two, from your story — how you met, your places, your inside jokes. Nobody else on Earth has this poem. Full sample below. Delivered in 24–48 h.</p>
+<div class="row"><span class="price">$14.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/paquete-completo.jpg" alt="Poem + Your Photo Card" loading="lazy"><span class="tag ">Digital</span></div>
+<div class="bd"><h3>Poem + Your Photo Card</h3><div class="es">Poema + su foto en tarjeta diseñada</div><p>Their exclusive poem typeset on a designed card with your favorite photo — ready to gift, print or frame. Delivered in 24–48 h.</p>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/caricatura.jpg" alt="Couple Caricature" loading="lazy"><span class="tag ">Example below ↓</span></div>
+<div class="bd"><h3>Couple Caricature</h3><div class="es">Caricatura de la pareja desde su foto</div><p>Your photo turned into a fun, romantic caricature — big smiles, your style, your scene. See the real example below. Delivered in 24–48 h.</p>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/retrato-3d.jpg" alt="3D-Style Animated Portrait" loading="lazy"><span class="tag ">Digital</span></div>
+<div class="bd"><h3>3D-Style Animated Portrait</h3><div class="es">Retrato estilo 3D animado de ustedes dos</div><p>You two as animated-movie characters: a 3D-style portrait that looks straight out of a film. See the example below.</p>
+<div class="row"><span class="price">$24.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/video-animado.jpg" alt="Animated Video of Your Photo" loading="lazy"><span class="tag ">Digital · Video</span></div>
+<div class="bd"><h3>Animated Video of Your Photo</h3><div class="es">Video animado de su foto</div><p>Your photo comes alive: a short animated video of your favorite moment together, ready to share or gift. Delivered in 24–48 h.</p>
+<div class="row"><span class="price">$29.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/carta-viva.jpg" alt="LIVING LOVE LETTER — Interactive" loading="lazy"><span class="tag emer">New · Nuevo</span></div>
+<div class="bd"><h3>LIVING LOVE LETTER</h3><div class="es">Carta Viva Interactiva · llega SOLO a su email</div><p>A long, real love letter written from YOUR story that arrives by email only to them — your photos hidden inside the words: they tap a word and your photo opens; another tap and your photo comes alive; and your full video waits inside, on a private link only they can open.</p>
+<div class="row"><span class="price">$29.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article></div>
+</div></section>
+
+<section id="cine"><div class="wrap">
+<div class="sec-head"><span class="no">04</span><h2>You two, the movie · <em>Su película</em></h2><span class="sub">Posters, trailers and comics starring YOU. · Pósters, tráileres y cómics protagonizados por ustedes.</span></div>
+<div class="grid"><article class="card"><div class="ph"><img src="fotos-v2/poster-pared.jpg" alt="Digital Movie Poster — Your Genre" loading="lazy"><span class="tag ">Examples below ↓</span></div>
+<div class="bd"><h3>Digital Movie Poster — Your Genre</h3><div class="es">Póster de cine digital · ustedes de protagonistas</div><p>Action, horror, drama, comedy or romance: you two star on a real movie-poster design. Two genre examples below — yours is made from YOUR photo.</p>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/trailer-cine.jpg" alt="Your Movie Trailer · 30–45 sec" loading="lazy"><span class="tag ">Digital · Video</span></div>
+<div class="bd"><h3>Your Movie Trailer · 30–45 sec</h3><div class="es">Tráiler de SU película · 30–45 segundos</div><p>A cinematic trailer of your love story, cut like a real film preview — posters, scenes and your names in lights. That is a couple watching THEIR trailer.</p>
+<div class="row"><span class="price">$34.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/comic-impreso.jpg" alt="Digital Comic Book of You Two" loading="lazy"><span class="tag ">Digital</span></div>
+<div class="bd"><h3>Digital Comic Book of You Two</h3><div class="es">Cómic digital completo de la pareja</div><p>Your whole story in comic panels: how you met, the trips, the laughs. The printed edition below shows the style.</p>
+<div class="row"><span class="price">$49.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/coloring.jpg" alt="Coloring Book from Your Photos" loading="lazy"><span class="tag ">Example below ↓</span></div>
+<div class="bd"><h3>Coloring Book from Your Photos</h3><div class="es">Coloring book desde sus fotos</div><p>Your photos redrawn as clean line-art coloring pages — a one-of-a-kind book of you two. Real page example below.</p>
+<div class="row"><span class="price">$14.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article></div>
+</div></section>
+
+<section id="ejemplos"><div class="band"><div class="wrap" style="padding-top:34px;padding-bottom:34px">
+<div class="sec-head"><span class="no">05</span><h2>Real examples · <em>Ejemplos reales</em></h2><span class="sub">This is what comes out of ONE photo. Yours is made from YOUR photo — same quality, your faces, your story. · Esto sale de UNA foto; el tuyo se hace con TU foto.</span></div>
+<div class="expo">
+<article class="excard"><div class="hd"><span class="exlabel">SAMPLE · EJEMPLO</span><h3>The poem — full sample</h3></div><div class="bd"><div class="poem"><h4>Where the 6:40 Train Slows Down</h4>
+<p>You were late to platform nine,<br>
+coffee in one hand, rain in your hair —<br>
+and I, who never believed in signs,<br>
+believed in that one, standing there.</p>
+<p>Now mornings smell like your kitchen,<br>
+like cinnamon, like Sunday, like home.<br>
+Every road I take without you<br>
+is a road that forgot where to go.</p>
+<p>So keep being my favorite delay,<br>
+my north when the map falls apart —<br>
+some people find their way with the stars;<br>
+I found mine in your heart.</p>
+<p class="sig">— Written from their real story: the train, the rain, the first coffee. Yours starts with one photo and three lines about you two.</p></div>
+<p class="note">Every poem is written from scratch for each couple — this one came from “we met on a train”. · Cada poema se escribe desde cero pa' cada pareja.</p>
+<div class="row"><span class="price">$14.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>Caricature: photo → caricature</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/caricatura.jpg" alt="Caricature example next to the original photo" loading="lazy"><figcaption>Left: the caricature. Right: the photo it came from. Same couple, 10× the fun. · A la izquierda la caricatura; a la derecha, la foto original.</figcaption></figure>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>Movie poster — ACTION genre</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/poster-accion.jpg" alt="Action movie poster example starring a couple" loading="lazy"><figcaption>One genre of five: action. Also horror, drama, comedy and romance — starring you two. · Uno de cinco géneros: acción. También terror, drama, comedia y romance.</figcaption></figure>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>Movie poster — COMEDY genre</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/poster-comedia.jpg" alt="Comedy movie poster example starring a couple" loading="lazy"><figcaption>Same couple, comedy cut: your funniest photo becomes the poster everyone shares. · La misma pareja en clave comedia: su foto más graciosa se vuelve el póster que todos comparten.</figcaption></figure>
+<div class="row"><span class="price">$19.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>Comic book — real pages</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/comic-impreso.jpg" alt="Printed comic book open showing a couple's story" loading="lazy"><figcaption>Real printed pages of a couple's story. The digital edition ($49.99) uses the same art. · Páginas reales impresas; la edición digital usa el mismo arte.</figcaption></figure>
+<div class="row"><span class="price">$129.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>Coloring page — from a photo</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/coloring.jpg" alt="Coloring book page made from a couple photo" loading="lazy"><figcaption>Clean line art drawn from a real couple photo — ready to color, page after page. · Línea limpia dibujada desde una foto real de pareja.</figcaption></figure>
+<div class="row"><span class="price">$14.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+<article class="excard"><div class="hd"><span class="exlabel">EXAMPLE · EJEMPLO</span><h3>3D portrait — animated style</h3></div><div class="bd">
+<figure class="shot"><img src="fotos-v2/retrato-3d.jpg" alt="3D-style animated portrait next to the original photo" loading="lazy"><figcaption>The portrait on screen, the real photo beside it. You two, movie-style. · El retrato en pantalla y la foto real al lado.</figcaption></figure>
+<div class="row"><span class="price">$24.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article>
+</div></div></div></section>
+
+<section id="fisicos"><div class="wrap">
+<div class="sec-head"><span class="no">06</span><h2>Ship-it gifts · <em>Regalos físicos</em></h2><span class="sub">Real things that arrive at the door — photographed, not drawn. · Cosas reales que llegan a la puerta — en foto, no en dibujo.</span></div>
+<div class="grid"><article class="card"><div class="ph tall"><img src="fotos-v2/tarjeta-3d.jpg" alt="Moving 3D Photo Card" loading="lazy"><span class="tag ">Best seller</span></div>
+<div class="bd"><h3>Moving 3D Photo Card</h3><div class="es">Tarjeta 3D que se mueve al inclinarla</div><p>Tilt it and your photo moves — a lenticular card that feels alive in your hand. The wow gift nobody expects.</p>
+<div class="row"><span class="price">$24.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/llavero.jpg" alt="Couple Keychain" loading="lazy"></div>
+<div class="bd"><h3>Couple Keychain</h3><div class="es">Llavero de la pareja</div><p>Your photo on a sturdy keychain — you two travel on their keys, every single day.</p>
+<div class="row"><span class="price">$29.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/imanes.jpg" alt="Fridge Magnet Set" loading="lazy"><span class="tag ">Physical · Físico</span></div>
+<div class="bd"><h3>Fridge Magnet Set</h3><div class="es">Set de imanes para la nevera</div><p>A set of photo magnets of you two for the fridge — small gift, daily smiles. Those are real photo magnets on a real fridge.</p>
+<div class="row"><span class="price">$14.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/vela.jpg" alt="Photo Candle" loading="lazy"></div>
+<div class="bd"><h3>Photo Candle</h3><div class="es">Vela con su foto</div><p>A scented candle with your photo: light it and the memory glows. Romantic-table ready, like the photo above.</p>
+<div class="row"><span class="price">$24.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph tall"><img src="fotos-v2/camiseta-sublimada.jpg" alt="Sublimated Photo T-Shirt" loading="lazy"></div>
+<div class="bd"><h3>Sublimated Photo T-Shirt</h3><div class="es">Camiseta sublimada con la foto de su día</div><p>That one perfect day, printed edge-to-edge in vivid color on a soft tee. She is wearing THEIR beach day.</p>
+<div class="row"><span class="price">$39.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/king-queen.jpg" alt="King &amp; Queen Set — with Your Names" loading="lazy"><span class="tag ">The pair · El par</span></div>
+<div class="bd"><h3>King &amp; Queen Set — with Your Names</h3><div class="es">Set King &amp; Queen con sus nombres · el par</div><p>Matching KING and QUEEN tees with your names. The pair — his and hers, crowns included.</p>
+<div class="row"><span class="price">$49.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/manta-fotos.jpg" alt="Blanket with Your Photos" loading="lazy"><span class="tag ">Most gifted</span></div>
+<div class="bd"><h3>Blanket with Your Photos</h3><div class="es">Manta con sus fotos</div><p>A big soft blanket printed with your photos — movie nights will never be the same. That is a real customer-style shot above.</p>
+<div class="row"><span class="price">$59.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/cuadros-canvas.jpg" alt="Canvas Wall Art Set" loading="lazy"></div>
+<div class="bd"><h3>Canvas Wall Art Set</h3><div class="es">Set de cuadros canvas de la pareja</div><p>A gallery set of canvas prints of you two for the living-room wall. Instant home upgrade, zero talent required.</p>
+<div class="row"><span class="price">$69.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/poster-pared.jpg" alt="Printed Movie Poster 24×36" loading="lazy"></div>
+<div class="bd"><h3>Printed Movie Poster 24×36</h3><div class="es">Póster de cine impreso 24×36</div><p>The big one: your movie poster printed at 24×36, ready to frame. On the wall it stops every guest.</p>
+<div class="row"><span class="price">$39.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/rompecabezas.jpg" alt="Photo Puzzle" loading="lazy"></div>
+<div class="bd"><h3>Photo Puzzle</h3><div class="es">Rompecabezas con su foto</div><p>Your photo as a jigsaw puzzle — build your favorite moment together, piece by piece.</p>
+<div class="row"><span class="price">$34.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article><article class="card"><div class="ph"><img src="fotos-v2/comic-impreso.jpg" alt="Printed Comic Book" loading="lazy"><span class="tag ">Collector</span></div>
+<div class="bd"><h3>Printed Comic Book</h3><div class="es">Cómic impreso de la pareja</div><p>Your story as a real printed comic book they can hold, keep and show everyone. Pages example below.</p>
+<div class="row"><span class="price">$129.99</span><a class="buy" href="https://payhip.com/profeshop" target="_blank" rel="noopener">Lo quiero · I want it</a></div></div></article></div>
+</div></section>
+
+<section id="fechas"><div class="wrap">
+<div class="sec-head"><span class="no">07</span><h2>Christmas deadlines · <em>Fechas de Navidad</em></h2><span class="sub">Honest dates — partners need production time. Order early, relax later. · Fechas honestas: producción toma tiempo.</span></div>
+<div class="dl">
+<div class="d"><b>🧍 3D Mini Figurine</b><span class="when">Order by NOV 20</span><p>Muñeco 3D: el que más tarda (modelado + envío). Después del 20-nov no garantizamos Navidad.</p></div>
+<div class="d"><b>💎 3D Crystal</b><span class="when">Until DEC 8</span><p>Cristal 3D con base LED: pedidos hasta el 8 de diciembre.</p></div>
+<div class="d"><b>🖨️ Printed gifts</b><span class="when">Until DEC 11</span><p>Impresos (manta, camisetas, póster, cuadros): hasta el 11 de diciembre, envío estándar EE.UU.</p></div>
+<div class="d"><b>⚡ Digital gifts</b><span class="when">Until DEC 24</span><p>Digitales: hasta el mismo 24 de diciembre — entrega en 24–48 h por email.</p></div>
+<div class="d"><b>💝 Valentine's Day</b><span class="when">FEB 14, 2027</span><p>San Valentín: la segunda ola. El muñeco y el cristal se piden con tiempo — enero es el mes.</p></div>
+</div></div></section>
+
+<section id="revendedores"><div class="wrap">
+<div class="resell"><span class="exlabel">SELL &amp; EARN · VENDE Y GANA</span>
+<h2>Resellers: earn with <em>every couple you know</em></h2>
+<p>Sell YouTwo Studio gifts to your friends, your church, your followers — we produce everything, you keep your commission. Exact commission is confirmed when you register; rates go up to: · Vende los regalos a tu gente; nosotros producimos todo y tú te quedas tu comisión, confirmada al registrarte:</p>
+<div class="comm">
+<div class="c"><span class="pct">40%</span><span>Digital gifts · Digitales</span></div>
+<div class="c"><span class="pct">20%</span><span>Printed gifts · Impresos</span></div>
+<div class="c"><span class="pct">15%</span><span>Crystal &amp; figurine · Cristal y muñeco</span></div>
+<div class="c"><span class="pct">20%</span><span>Packages · Paquetes</span></div>
+</div>
+<div class="cta-row"><a class="btn-big" href="mailto:swingbravo@gmail.com?subject=YouTwo%20Studio%20—%20quiero%20ser%20revendedor%2Fa">✉️ Register by email · swingbravo@gmail.com</a></div>
+<p style="margin-top:12px;font-size:14px">Registration is free, by email only — comisiones exactas se confirman al registrarte.</p>
+</div></div></section>
+
+<footer><div class="wrap"><div class="cols">
+<div><h4>YouTwo Studio</h4><p><b style="color:#fff">YouTwo Studio</b><br><i>Fábrica de Recuerdos para Parejas</i><br>Personalized couple gifts made from ONE photo. Regalos de pareja personalizados desde UNA foto.</p></div>
+<div><h4>Order · Pedir</h4><ul><li>🛍️ Store · Tienda: <a href="https://payhip.com/profeshop" target="_blank" rel="noopener">payhip.com/profeshop</a></li><li>✉️ swingbravo@gmail.com</li><li>After you buy, email your photo + 3 lines of your story</li><li>Approve the preview → we produce</li></ul></div>
+<div><h4>The catalogue</h4><ul><li><a href="#estrellas">Stars: crystal, figurine, packages</a></li><li><a href="#digitales">Digital gifts 24–48 h</a></li><li><a href="#cine">Your movie: posters &amp; comics</a></li><li><a href="#fisicos">Ship-it gifts</a></li><li><a href="#revendedores">Resellers — earn up to 40%</a></li></ul></div>
+</div>
+<p class="fine">YouTwo Studio — Fábrica de Recuerdos para Parejas · Every product is made to order from your photo; you approve a preview before production. Photos shown are product examples. · Cada producto se hace por encargo desde tu foto; apruebas la vista previa antes de producir.</p>
+</div></footer>
+</body></html>
